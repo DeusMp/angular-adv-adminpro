@@ -1,0 +1,47 @@
+<div id="main-wrapper">
+
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <!-- Bread crumb  -->
+            <app-breadcrumbs></app-breadcrumbs>
+            <!-- Sistemas de Rutas -->
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="button-group">
+                                <button type="button" class="btn waves-effect waves-light btn-primary">Primary</button>
+                                <button type="button"
+                                    class="btn waves-effect waves-light btn-secondary">Secondary</button>
+                                <button type="button" class="btn waves-effect waves-light btn-success">Success</button>
+                                <button type="button" class="btn waves-effect waves-light btn-info">Info</button>
+                                <button type="button" class="btn waves-effect waves-light btn-warning">Warning</button>
+                                <button type="button" class="btn waves-effect waves-light btn-danger">Danger</button>
+                            </div>
+
+                            <router-outlet></router-outlet>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <app-right-sidebar></app-right-sidebar>
+            
+        </div>
+        <!-- ============================================================== -->
+        <!-- footer -->
+        <!-- ============================================================== -->
+        <footer class="footer">
+            © 2020 Admin Pro by wrappixel.com
+        </footer>
+        <!-- ============================================================== -->
+        <!-- End footer -->
+        <!-- ============================================================== -->
+
+    </div>
+</div>
