@@ -14,7 +14,8 @@ function store(name, val) {
         $('#theme').attr({href: './assets/css/colors/'+currentStyle+'.css'})
     });
 
-    var currentTheme = get('theme');
+    //var currentTheme = get('theme');
+    var currentTheme =  localStorage.getItem('theme');
     if(currentTheme)
     {
       $('#theme').attr({href: './assets/css/colors/'+currentTheme+'.css'});
