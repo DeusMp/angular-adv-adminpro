@@ -1,1 +1,59 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">
+                    Striped Progress bar  Izq({{ progreso1 }}) Der({{ progreso2 }})
+                    <a class="get-code" data-toggle="collapse" href="#pgr3" aria-expanded="true">
+                        <i class="fa fa-code" title="" data-toggle="tooltip" data-original-title="Get Code"></i>
+                    </a>
+                </h4>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-primary progress-bar-striped active" 
+                         style="height:10px;"
+                         [style.width]="getProgreso1"
+                         role="progressbar"> 
+                    </div>
+                </div>
+                <div class="progress m-t-20">
+                    <div class="progress-bar bg-info progress-bar-striped active" 
+                         style="height:10px;"
+                         [style.width]="getProgreso2"
+                         role="progressbar"> 
+                    </div>
+                </div>
+            <!-- <div class="button-group">
+                    <button type="button" class="btn waves-effect waves-light btn-primary">Primary</button>
+                    <button type="button"
+                        class="btn waves-effect waves-light btn-secondary">Secondary</button>
+                    <button type="button" class="btn waves-effect waves-light btn-success">Success</button>
+                    <button type="button" class="btn waves-effect waves-light btn-info">Info</button>
+                    <button type="button" class="btn waves-effect waves-light btn-warning">Warning</button>
+                    <button type="button" class="btn waves-effect waves-light btn-danger">Danger</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (valor)="progreso1 = $event" 
+                                   [valor]="progreso1"
+                                   [btnClass]="'btn-primary'">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                <app-incrementador (valor)="progreso2 = $event" 
+                                   [valor]="progreso2"
+                                   [btnClass]="'btn-info'">
+                </app-incrementador>
+            </div>
+        </div>
+    </div>
+</div>
