@@ -1,68 +1,75 @@
 /*
-Template Name: Admin Pro Admin
-Author: Wrappixel
+Template Name: Monster Admin
+Author: Themedesigner
 Email: niravjoshi87@gmail.com
 File: scss
 */
 /*
-Template Name: Admin Pro Admin
-Author: Wrappixel
+Template Name: Monster Admin
+Author: Themedesigner
 Email: niravjoshi87@gmail.com
 File: scss
 */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 /*Theme Colors*/
 /*bootstrap Color*/
 /*Light colors*/
 /*Normal Color*/
 /*Extra Variable*/
+/*Preloader*/
+.preloader {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  position: fixed;
+  z-index: 99999;
+  background: #fff;
+}
+
+.preloader .cssload-speeding-wheel {
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: calc(50% - 3.5px);
+}
+
 /*******************
 /*Top bar
 *******************/
 .topbar {
-  background: #06d79c; }
-  .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
-    display: none; }
-  .topbar .top-navbar .navbar-header .navbar-brand .light-logo {
-    display: inline-block;
-    color: rgba(255, 255, 255, 0.8); }
-  .topbar .navbar-nav .nav-item > a.nav-link {
-    color: rgba(255, 255, 255, 0.8); }
-    .topbar .navbar-nav .nav-item > a.nav-link:hover, .topbar .navbar-nav .nav-item > a.nav-link:focus {
-      color: #ffffff !important; }
-  .topbar .top-navbar .navbar-nav > .nav-item > span {
-    color: #ffffff; }
-  .topbar .navbar-header {
-    background: #272c33; }
+  background: #00acc1;
+}
 
-.logo-center .topbar .navbar-header {
-  background: transparent;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+.topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
+  display: none;
+}
 
-.logo-center .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
-  display: none; }
-
-.logo-center .topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+.topbar .top-navbar .navbar-header .navbar-brand .light-logo {
   display: inline-block;
-  color: rgba(255, 255, 255, 0.8); }
+  color: rgba(255, 255, 255, 0.8);
+}
 
-.hdr-nav-bar .navbar .navbar-nav > li.active > a {
-  border-color: #06d79c; }
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link:hover, .topbar .navbar-light .navbar-nav .nav-item > a.nav-link:focus {
+  color: #ffffff !important;
+}
 
 /*******************
 /*General Elements
 *******************/
-.lstick {
-  background: #06d79c; }
-
 a {
-  color: #06d79c; }
+  color: #26c6da;
+}
 
 a.link:hover, a.link:focus {
-  color: #06d79c !important; }
+  color: #26c6da !important;
+}
 
 .bg-theme {
-  background-color: #06d79c !important; }
+  background-color: #26c6da !important;
+}
 
 .pagination > .active > a,
 .pagination > .active > span,
@@ -70,85 +77,124 @@ a.link:hover, a.link:focus {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  background-color: #06d79c;
-  border-color: #06d79c; }
+  background-color: #26c6da;
+  border-color: #26c6da;
+}
 
 .right-sidebar .rpanel-title {
-  background: #06d79c; }
+  background: #26c6da;
+}
 
 .stylish-table tbody tr:hover, .stylish-table tbody tr.active {
-  border-left: 4px solid #06d79c; }
+  border-left: 4px solid #26c6da;
+}
 
 .text-themecolor {
-  color: #06d79c !important; }
+  color: #26c6da !important;
+}
 
 .profile-tab li a.nav-link.active,
 .customtab li a.nav-link.active {
-  border-bottom: 2px solid #06d79c;
-  color: #06d79c; }
+  border-bottom: 2px solid #26c6da;
+  color: #26c6da;
+}
 
 .profile-tab li a.nav-link:hover,
 .customtab li a.nav-link:hover {
-  color: #06d79c; }
+  color: #26c6da;
+}
 
 /*******************
 /*Buttons
 *******************/
 .btn-themecolor,
 .btn-themecolor.disabled {
-  background: #06d79c;
+  background: #26c6da;
   color: #ffffff;
-  border: 1px solid #06d79c; }
-  .btn-themecolor:hover,
-  .btn-themecolor.disabled:hover {
-    background: #06d79c;
-    opacity: 0.7;
-    border: 1px solid #06d79c; }
-  .btn-themecolor.active, .btn-themecolor:focus,
-  .btn-themecolor.disabled.active,
-  .btn-themecolor.disabled:focus {
-    background: #028ee1; }
+  border: 1px solid #26c6da;
+}
+
+.btn-themecolor:hover,
+.btn-themecolor.disabled:hover {
+  background: #26c6da;
+  opacity: 0.7;
+  border: 1px solid #26c6da;
+}
+
+.btn-themecolor.active, .btn-themecolor:focus,
+.btn-themecolor.disabled.active,
+.btn-themecolor.disabled:focus {
+  background: #028ee1;
+}
 
 /*******************
 /*sidebar navigation
 *******************/
-.card-no-border .left-sidebar,
-.card-no-border .sidebar-nav {
-  background: #242a33; }
+.card-no-border .left-sidebar, .card-no-border .sidebar-nav {
+  background: #272c33;
+}
 
 .mini-sidebar .sidebar-nav {
-  background: transparent; }
+  background: transparent;
+}
 
 @media (min-width: 768px) {
   .mini-sidebar .sidebar-nav #sidebarnav > li > ul {
-    background: #1c2128; } }
+    background: #181c22;
+  }
+}
 
 .sidebar-nav {
-  background: #242a33; }
+  background: #272c33;
+}
 
-.user-profile .profile-text a {
-  color: #687384 !important; }
-
-.card-no-border .sidebar-footer {
-  background: #1c2128; }
-
-.label-themecolor {
-  background: #06d79c; }
-
-.sidebar-nav > ul > li.active > a {
-  color: #ffffff;
-  border-color: #06d79c; }
-  .sidebar-nav > ul > li.active > a i {
-    color: #ffffff; }
+.sidebar-nav ul li a {
+  color: #798699;
+}
 
 .sidebar-nav ul li a.active, .sidebar-nav ul li a:hover {
-  color: #ffffff; }
-  .sidebar-nav ul li a.active i, .sidebar-nav ul li a:hover i {
-    color: #ffffff; }
+  color: #26c6da;
+}
+
+.sidebar-nav ul li a.active {
+  color: #ffffff;
+}
 
 .sidebar-nav ul li.nav-small-cap {
-  color: #687384; }
+  color: #99abb4;
+}
 
-@media (min-width: 768px) {
-  .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
-    background: #1c2128; } }
+.sidebar-nav > ul > li.active > a, .sidebar-nav > ul > li.active:hover > a {
+  color: #ffffff !important;
+  background: #26c6da !important;
+}
+
+.sidebar-nav > ul > li.active > a i, .sidebar-nav > ul > li.active:hover > a i {
+  color: #ffffff !important;
+}
+
+.sidebar-nav > ul > li.active > a:after, .sidebar-nav > ul > li.active:hover > a:after {
+  border-color: #ffffff;
+}
+
+.sidebar-nav > ul > li > a.active i, .sidebar-nav > ul > li > a:hover i {
+  color: #26c6da;
+}
+
+.sidebar-nav > ul > li > a i {
+  color: #798699;
+}
+
+.sidebar-nav > ul > li > a.active {
+  font-weight: 400;
+  background: #ffffff;
+  color: #26c6da;
+}
+
+.user-profile .profile-text a {
+  color: #798699 !important;
+}
+
+.card-no-border .sidebar-footer {
+  background: #181c22;
+}
